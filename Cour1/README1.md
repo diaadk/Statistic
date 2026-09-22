@@ -57,7 +57,7 @@
 
 ## Question A6. Les deux résultats diffèrent. Lequel utiliserais-tu, et pour dire quoi ? et comment le corrigerais-tu ?
 
-<em>J'utiliserais la moyenne pondérée car pour la moyenne simple chaque note compte de la même maniére alors que la moyenne pondérée donne plus d'importance au nombres les plus élevés et comptabilise les cellules vides comme des zéro.</em>
+<em>Je choisirais la moyenne pondérée car il prend en compte </em>
 
 ## A7 · La phrase de restitution (15 min)
 
