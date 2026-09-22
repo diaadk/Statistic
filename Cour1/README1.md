@@ -57,7 +57,7 @@
 
 ## Question A6. Les deux résultats diffèrent. Lequel utiliserais-tu, et pour dire quoi ? et comment le corrigerais-tu ?
 
-<em>J'utiliserais la moyenne simple car chaque note compte de la même maniére alors que la moyenne pondérée donne plus d'importance au nombres le splus élevés et comptabilise les cellules vides comme des zéro.</em>
+<em>J'utiliserais la moyenne pondérée car pour la moyenne simple chaque note compte de la même maniére alors que la moyenne pondérée donne plus d'importance au nombres les plus élevés et comptabilise les cellules vides comme des zéro.</em>
 
 ## A7 · La phrase de restitution (15 min)
 
@@ -66,3 +66,5 @@ d'une commande Cyclo'Nord. Elle doit contenir un indicateur de position, son pé
 induire Nadia en erreur.
 
 <em>. </em>
+
+# PARTIE B — Dispersion
