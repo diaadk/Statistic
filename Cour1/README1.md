@@ -1,5 +1,7 @@
 # PARTIE A — Position
 
+google sheet : https://docs.google.com/spreadsheets/d/1XtCHi-tSLJQ9kiQiFY3a4_SeehYDVZ0m6vgPvd8fgsk/edit?usp=sharing
+
 ## A1 · Typer les colonnes (20 min)
 
 | Colonne             | Type (quantitative continue / discrète / qualitative nominale / ordinale / date / identifiant) | Moyenne possible ? (oui/non) |
