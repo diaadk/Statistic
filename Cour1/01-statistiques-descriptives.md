@@ -8,14 +8,14 @@
 > Elle veut un chiffre. Un seul. « Notre commande moyenne, c'est combien ? »
 > Tu vas lui en donner un — puis lui expliquer pourquoi il ne veut presque rien dire.
 
-| | |
-|---|---|
-| **Jour** | Lundi 21/09/2026 · matin (apport) + après-midi (exercice) |
-| **Durée** | ≈ 7 h |
-| **Compétences** | **C3.1** (niveau 1) · **C4.5** (niveau 1) |
-| **Outils** | Excel (LibreOffice Calc / Google Sheets acceptés) |
-| **Données** | [`donnees/cyclonord_ventes_2025_fiable.xlsx`](donnees/cyclonord_ventes_2025_fiable.xlsx) |
-| **Pré-requis** | Semaine P1 : trier, filtrer, tableau structuré |
+|                 |                                                                                          |
+| --------------- | ---------------------------------------------------------------------------------------- |
+| **Jour**        | Lundi 21/09/2026 · matin (apport) + après-midi (exercice)                                |
+| **Durée**       | ≈ 7 h                                                                                    |
+| **Compétences** | **C3.1** (niveau 1) · **C4.5** (niveau 1)                                                |
+| **Outils**      | Excel (LibreOffice Calc / Google Sheets acceptés)                                        |
+| **Données**     | [`donnees/cyclonord_ventes_2025_fiable.xlsx`](donnees/cyclonord_ventes_2025_fiable.xlsx) |
+| **Pré-requis**  | Semaine P1 : trier, filtrer, tableau structuré                                           |
 
 ---
 
@@ -40,11 +40,11 @@ Personne ne lit 613 lignes. Encore moins 31 000. Le premier travail d'un analyst
 
 Ce résumé s'appelle la **statistique descriptive**. Elle répond à trois questions, dans cet ordre :
 
-| Question | Famille d'indicateurs | Vu quand |
-|---|---|---|
-| « Ça vaut combien, **en gros** ? » | **Position** (moyenne, médiane, mode) | aujourd'hui |
-| « Est-ce que ça **varie** beaucoup ? » | **Dispersion** (écart-type, quartiles, étendue) | [demain](02-dispersion-et-pieges-de-la-moyenne.md) |
-| « Est-ce que ça **dépend** d'autre chose ? » | **Croisements** (TCD) | [mercredi](03-tableaux-croises-dynamiques.md) |
+| Question                                     | Famille d'indicateurs                           | Vu quand                                           |
+| -------------------------------------------- | ----------------------------------------------- | -------------------------------------------------- |
+| « Ça vaut combien, **en gros** ? »           | **Position** (moyenne, médiane, mode)           | aujourd'hui                                        |
+| « Est-ce que ça **varie** beaucoup ? »       | **Dispersion** (écart-type, quartiles, étendue) | [demain](02-dispersion-et-pieges-de-la-moyenne.md) |
+| « Est-ce que ça **dépend** d'autre chose ? » | **Croisements** (TCD)                           | [mercredi](03-tableaux-croises-dynamiques.md)      |
 
 > ⚠️ **La faute n°1 en entreprise** : s'arrêter à la première question. Un chiffre de position seul
 > est presque toujours trompeur. On ne le publie jamais sans un chiffre de dispersion à côté.
@@ -56,16 +56,16 @@ Ce résumé s'appelle la **statistique descriptive**. Elle répond à trois ques
 Tu ne peux pas faire la moyenne de « Lille ». Ça paraît évident — et pourtant c'est la source de la
 moitié des erreurs. Classe tes colonnes **avant** d'ouvrir la boîte à formules.
 
-| Type | Définition | Dans Cyclo'Nord | Ce qu'on peut calculer |
-|---|---|---|---|
-| **Quantitative continue** | un nombre mesurable, les décimales ont un sens | `Montant_TTC`, `Prix_unitaire_TTC`, `Remise` | moyenne, médiane, mode, écart-type, somme |
-| **Quantitative discrète** | un nombre qui se compte, entier | `Quantite` | idem (mais « 1,78 vélo » se commente) |
-| **Qualitative nominale** | une étiquette, sans ordre | `Magasin`, `Departement`, `Categorie`, `Produit`, `Canal`, `Statut` | **effectifs**, pourcentages, **mode** |
-| **Qualitative ordinale** | une étiquette **ordonnée** | `Note_client` (1 à 5) | effectifs, mode, **médiane** — moyenne discutable |
-| **Date** | un point dans le temps | `Date_commande` | min, max, étendue, regroupements |
-| **Identifiant** | sert à désigner, pas à mesurer | `ID_commande` | **rien** — on compte, c'est tout |
+| Type                      | Définition                                     | Dans Cyclo'Nord                                                     | Ce qu'on peut calculer                            |
+| ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------- |
+| **Quantitative continue** | un nombre mesurable, les décimales ont un sens | `Montant_TTC`, `Prix_unitaire_TTC`, `Remise`                        | moyenne, médiane, mode, écart-type, somme         |
+| **Quantitative discrète** | un nombre qui se compte, entier                | `Quantite`                                                          | idem (mais « 1,78 vélo » se commente)             |
+| **Qualitative nominale**  | une étiquette, sans ordre                      | `Magasin`, `Departement`, `Categorie`, `Produit`, `Canal`, `Statut` | **effectifs**, pourcentages, **mode**             |
+| **Qualitative ordinale**  | une étiquette **ordonnée**                     | `Note_client` (1 à 5)                                               | effectifs, mode, **médiane** — moyenne discutable |
+| **Date**                  | un point dans le temps                         | `Date_commande`                                                     | min, max, étendue, regroupements                  |
+| **Identifiant**           | sert à désigner, pas à mesurer                 | `ID_commande`                                                       | **rien** — on compte, c'est tout                  |
 
-> 🧠 **Le test qui tranche.** Pose-toi la question : *« la somme de cette colonne a-t-elle un sens ? »*
+> 🧠 **Le test qui tranche.** Pose-toi la question : _« la somme de cette colonne a-t-elle un sens ? »_
 > Somme des montants = chiffre d'affaires ✅. Somme des `ID_commande` = rien du tout ❌.
 > Si la somme n'a pas de sens, la moyenne non plus.
 
@@ -100,11 +100,13 @@ pose tes valeurs sur une règle, la moyenne est l'endroit où la règle tient en
 - Elle est **sensible aux valeurs extrêmes**. Une seule valeur énorme la déplace beaucoup.
 
 > 🎯 **Vérifie toujours combien de valeurs ont réellement servi au calcul.**
+>
 > ```excel
 > =NB(T_Ventes[Note_client])          → 560   (valeurs numériques)      [COUNT]
 > =NBVAL(T_Ventes[Note_client])       → 560   (cellules non vides)      [COUNTA]
 > =NB.VIDE(T_Ventes[Note_client])     →  53   (cellules vides)          [COUNTBLANK]
 > ```
+>
 > Une moyenne calculée sur 560 lignes annoncée comme « la note moyenne de nos 613 commandes » est
 > déjà une petite malhonnêteté.
 
@@ -148,11 +150,11 @@ Le mode de `Canal` est donc **« Magasin »** : c'est le canal dominant, avec 58
 
 ## 4. Le moment de vérité : les trois chiffres côte à côte
 
-| Indicateur | Valeur sur `Montant_TTC` | Ce qu'il raconte |
-|---|---|---|
-| **Mode** | **19 €** | La commande la plus fréquente : une réparation |
-| **Médiane** | **177 €** | La commande du milieu : un accessoire ou une petite prestation |
-| **Moyenne** | **1 679,77 €** | Un chiffre que presque **aucune** commande réelle n'atteint |
+| Indicateur  | Valeur sur `Montant_TTC` | Ce qu'il raconte                                               |
+| ----------- | ------------------------ | -------------------------------------------------------------- |
+| **Mode**    | **19 €**                 | La commande la plus fréquente : une réparation                 |
+| **Médiane** | **177 €**                | La commande du milieu : un accessoire ou une petite prestation |
+| **Moyenne** | **1 679,77 €**           | Un chiffre que presque **aucune** commande réelle n'atteint    |
 
 La moyenne est **9,5 fois** plus grande que la médiane. Les trois indicateurs décrivent le même
 fichier et racontent trois histoires différentes.
@@ -161,11 +163,11 @@ fichier et racontent trois histoires différentes.
 
 C'est une règle de lecture que tu utiliseras toute ta carrière :
 
-| Situation | Forme de la distribution | Exemple typique |
-|---|---|---|
-| moyenne ≈ médiane | **symétrique** | tailles, températures, notes d'examen |
-| **moyenne > médiane** | **étalée vers la droite** — quelques valeurs très grandes | salaires, prix, montants de commande |
-| moyenne < médiane | étalée vers la gauche — quelques valeurs très petites | âge au décès, notes très hautes |
+| Situation             | Forme de la distribution                                  | Exemple typique                       |
+| --------------------- | --------------------------------------------------------- | ------------------------------------- |
+| moyenne ≈ médiane     | **symétrique**                                            | tailles, températures, notes d'examen |
+| **moyenne > médiane** | **étalée vers la droite** — quelques valeurs très grandes | salaires, prix, montants de commande  |
+| moyenne < médiane     | étalée vers la gauche — quelques valeurs très petites     | âge au décès, notes très hautes       |
 
 ![Les trois formes de distribution, avec la position de la moyenne et de la médiane sur chacune](images/formes-de-distribution.svg)
 
@@ -192,8 +194,8 @@ tire la moyenne vers le haut pendant que la masse des commandes reste sous 200 �
 
 ## 5. Calculer sur un sous-ensemble
 
-Un indicateur global ne sert presque jamais tel quel. Ce qu'on veut, c'est *« la moyenne **des VAE** »*,
-*« le panier médian **de Lille** »*. Deux familles de fonctions, à retenir maintenant :
+Un indicateur global ne sert presque jamais tel quel. Ce qu'on veut, c'est _« la moyenne **des VAE** »_,
+_« le panier médian **de Lille** »_. Deux familles de fonctions, à retenir maintenant :
 
 ```excel
 =MOYENNE.SI.ENS(T_Ventes[Montant_TTC]; T_Ventes[Categorie]; "VAE")     [AVERAGEIFS]
@@ -243,6 +245,7 @@ En tableur, une seule fonction fait le numérateur :
 ```excel
 =SOMMEPROD(T_Ventes[Note_client]; T_Ventes[Montant_TTC]) / SOMME(T_Ventes[Montant_TTC])
 ```
+
 > `SOMMEPROD` = `SUMPRODUCT` : il multiplie les deux colonnes ligne à ligne, puis additionne.
 
 ⚠️ Cette formule suppose qu'aucune note n'est vide (une cellule vide vaut 0 dans `SOMMEPROD`, ce qui
@@ -251,30 +254,30 @@ fausse le résultat). Sur un vrai fichier, on restreint d'abord aux lignes noté
 **Quand pondérer ?** Dès qu'additionner des unités de tailles différentes n'a pas de sens :
 
 - moyenne des prix de 8 magasins → chaque magasin compte pour 1, même celui qui fait 5 ventes ;
-- **moyenne pondérée par le nombre de ventes** → chaque *vente* compte pour 1.
+- **moyenne pondérée par le nombre de ventes** → chaque _vente_ compte pour 1.
 
 Tu retrouveras exactement ce piège vendredi, sur les communes : une commune de 300 habitants doit-elle
-peser autant qu'une ville de 230 000 dans le « revenu moyen du territoire » ? *(Réponse : non, et
-l'écart entre les deux calculs se chiffre.)*
+peser autant qu'une ville de 230 000 dans le « revenu moyen du territoire » ? _(Réponse : non, et
+l'écart entre les deux calculs se chiffre.)_
 
 ---
 
 ## 7. Mémo des fonctions du jour
 
-| Besoin | Excel (FR) | Excel (EN) |
-|---|---|---|
-| Moyenne | `MOYENNE` | `AVERAGE` |
-| Médiane | `MEDIANE` | `MEDIAN` |
-| Mode | `MODE.SIMPLE` | `MODE.SNGL` |
-| Somme | `SOMME` | `SUM` |
-| Compter des nombres | `NB` | `COUNT` |
-| Compter des cellules non vides | `NBVAL` | `COUNTA` |
-| Compter des cellules vides | `NB.VIDE` | `COUNTBLANK` |
-| Compter sous condition | `NB.SI.ENS` | `COUNTIFS` |
-| Sommer sous condition | `SOMME.SI.ENS` | `SUMIFS` |
-| Moyenne sous condition | `MOYENNE.SI.ENS` | `AVERAGEIFS` |
-| Moyenne pondérée | `SOMMEPROD` / `SOMME` | `SUMPRODUCT` / `SUM` |
-| Minimum / maximum | `MIN` / `MAX` | `MIN` / `MAX` |
+| Besoin                         | Excel (FR)            | Excel (EN)           |
+| ------------------------------ | --------------------- | -------------------- |
+| Moyenne                        | `MOYENNE`             | `AVERAGE`            |
+| Médiane                        | `MEDIANE`             | `MEDIAN`             |
+| Mode                           | `MODE.SIMPLE`         | `MODE.SNGL`          |
+| Somme                          | `SOMME`               | `SUM`                |
+| Compter des nombres            | `NB`                  | `COUNT`              |
+| Compter des cellules non vides | `NBVAL`               | `COUNTA`             |
+| Compter des cellules vides     | `NB.VIDE`             | `COUNTBLANK`         |
+| Compter sous condition         | `NB.SI.ENS`           | `COUNTIFS`           |
+| Sommer sous condition          | `SOMME.SI.ENS`        | `SUMIFS`             |
+| Moyenne sous condition         | `MOYENNE.SI.ENS`      | `AVERAGEIFS`         |
+| Moyenne pondérée               | `SOMMEPROD` / `SOMME` | `SUMPRODUCT` / `SUM` |
+| Minimum / maximum              | `MIN` / `MAX`         | `MIN` / `MAX`        |
 
 > 🧰 **Astuce tableau structuré.** Si tu convertis ta plage en tableau (`Ctrl + L`) et que tu le
 > nommes `T_Ventes`, tu écris `T_Ventes[Montant_TTC]` au lieu de `K2:K614`. La formule devient
@@ -285,7 +288,7 @@ l'écart entre les deux calculs se chiffre.)*
 ## 8. À toi de jouer
 
 ➡️ **[Exercice guidé — Faire parler les ventes Cyclo'Nord](05-exercice-guide-cyclonord.md), partie A**
-*(à faire cet après-midi, niveau 1 · imiter)*
+_(à faire cet après-midi, niveau 1 · imiter)_
 
 ---
 
