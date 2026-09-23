@@ -28,7 +28,7 @@ google sheet : https://docs.google.com/spreadsheets/d/1XtCHi-tSLJQ9kiQiFY3a4_See
 
 ## Question A3. Nadia veut écrire dans sa présentation : \_« Nos 613 commandes obtiennent une note moyenne de 4,1/5. »\_ Cette phrase est-elle exacte ? Réécris-la correctement.
 
-<em> « Nos 560 commandes obtiennent une note moyenne de 4,1/5» </em>
+<em> « Sur nos 613 commandes 560 commandes obtiennent une note moyenne de 4,1/5» </em>
 
 ## Question A4. Que dirais-tu à Nadia si elle voulait annoncer « 1 029 700 € de chiffre d'affaires 2025 » ?
 
