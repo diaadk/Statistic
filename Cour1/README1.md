@@ -43,7 +43,7 @@ google sheet : https://docs.google.com/spreadsheets/d/1XtCHi-tSLJQ9kiQiFY3a4_See
 | VAE         | 97           | 672 822,50€   | 6 936,31€     |
 | VTT         | 88           | 157 276,05€   | 1 787,23€     |
 | Vélo urbain | 105          | 175 996,50€   | 1 676,16€     |
-| **Total**   | 613          | 1 029 700,50€ | 10 541,70€    |
+| **Total**   | 613          | 1 029 700,50€ |               |
 
 ## Question A5.
 
@@ -73,7 +73,7 @@ induire Nadia en erreur.
 
 ## Question B1. Les deux écarts-types diffèrent de 12 € sur 15 500. Explique en deux lignes laquelle des deux fonctions convient ici, et pourquoi la différence est si faible.
 
-<em> Les deux écart-type différe de 12€ car l'un prend en compte tout le tableau alors que l'autre prend tout le tableau n- 1, c'est pourquoi la différence est si faible. Les deux fonctions conviennent mais l'écart type standard corrige la sous-estimation de la dispersion réelle </em>
+<em> Les deux écart-type différe de 12€ car l'un prend en compte tout le tableau alors que l'autre prend tout le tableau n- 1, c'est pourquoi la différence est si faible. Les deux fonctions conviennent mais c'est plus précis de prendre l'écart type pearson pour prendre l'emsenble des donées et d'utiliser l'écart type standard sur un echa,tillon car elle corrige la sous-estimation de la dispersion réelle </em>
 
 ## B2 · Le résumé à cinq nombres ET Complète la phrase :
 
@@ -97,7 +97,7 @@ induire Nadia en erreur.
 ## Question B4. Pour chacune des trois commandes de quantité 100, dis si tu la gardes, si tu l'écartes ou si tu l'analyses à part — et justifie. Aucune des trois réponses n'est automatiquement fausse ; c'est la justification qui compte.
 
 <em>
-Je deciderais de garder les deux commandes "en cours" et "livrée" dans mon analyse, car même si comparer aux autres commandes elles sont plus conséquente quantité, elles correspondent à des commandes réelles. Je metterais de coté la commande de 379 000€ car elle est annulé et c'est un haut montant qui influence les statistiques. Je l'analyserais à part, car il est possible qu'il s'agisse d'une véritable commande de flotte pour une entreprise. </em>
+Je deciderais de garder les deux commandes "en cours" et "livrée" dans une analyse à part,  même si comparer aux autres commandes elles sont plus conséquente quantité, elles correspondent à des commandes réelles. Je metterais de coté la commande de 379 000€ car elle est annulé et c'est un haut montant qui influence les statistiques mais  il est possible qu'il s'agisse d'une véritable commande de flotte pour une entreprise avec une erreur sur la quantité. </em>
 
 ## B4 · Mesurer l'effet d'une seule ligne
 
